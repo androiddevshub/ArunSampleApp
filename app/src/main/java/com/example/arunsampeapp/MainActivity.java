@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
                 intent.putExtra("sumOfMarks", textSum.getText().toString());
                 startActivity(intent);
                 finish();
